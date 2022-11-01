@@ -1,0 +1,317 @@
+.wrapper{
+    overflow: hidden;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    height: 100%;
+    position: relative;
+}
+
+/* bigimg-box1 */
+.bigimg-box{
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    background-image: url('../img/pexels-tetyana-kovyrina-3586056\ \(2\).jpg');
+    background-position: right ;
+    background-size: cover;
+}
+.bigimg-box::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.login-box{
+    top: 15%;
+    right: 8%;
+    position: absolute;
+    width: 30%;
+    background-color: rgba(8, 8, 8, 0.8);
+    border-radius: 20px;
+}
+.loginbox-ul{
+    margin-top: 10px;
+}
+.loginbox-ul li{
+    width: 100%;
+    padding-top: 20px;
+}
+.loginbox-ul label{
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 600;
+    margin-left: 10%;
+}
+.loginbox-ul input{
+    display: block;
+    width: 80%;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 10%;
+}
+.loginbox-ul input:focus{
+    outline: 4px solid #42ab1f;
+    border-radius: 4px;
+    border: none;
+}
+.login-btn{
+    position: relative;
+    margin: 20px auto 0;
+    width: 40%;
+    height: 40px;
+    background-color: #333;
+    border-radius: 4px;
+    border: 3px solid #fff;
+    transition: all 0.3s;
+}
+.login-btn:hover{
+    background-color: #222;
+}
+.cutline{
+    margin-top: 20px;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+}
+.loginF-btn{
+    margin: 20px auto 0;
+    width: 80%;
+    height: 40px;
+    background-color: rgb(45, 72, 171);
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+.loginF-btn:hover{
+    background-color: rgb(32, 52, 123);
+}
+.login-box a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    line-height: 40px;
+}
+.loginG-btn{
+    position: relative;
+    margin: 20px auto 0;
+    width: 80%;
+    height: 40px;
+    background-color: rgb(224, 68, 41);
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+.loginG-btn:hover{
+    background-color: rgb(173, 53, 32);
+}
+.goto-signin{
+    margin: 0 auto 20px;
+    width: 60%;
+}
+.goto-signin p{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+/* bigimg-box2 */
+.bigimg-box2{
+    position: absolute;
+    top: 0;
+    right: -110%;
+    width: 100%;
+    padding-top: 56.25%;
+    background-image: url('../img/pexels-juris-freidenfelds-2013665\ \(1\).jpg');
+    background-position: left ;
+    background-size: cover;
+    transition: all 0.5s;
+}
+.bigimg-box2::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.login-box2{
+    top: 15%;
+    left: 8%;
+    position: absolute;
+    width: 30%;
+    background-color: rgba(8, 8, 8, 0.8);
+    border-radius: 20px;
+}
+.loginbox2-ul{
+    margin-top: 10px;
+}
+.loginbox2-ul li{
+    width: 100%;
+    padding-top: 10px;
+}
+.loginbox2-ul label{
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 600;
+    margin-left: 10%;
+}
+.loginbox2-ul input{
+    display: block;
+    width: 80%;
+    height: 15px;
+    margin-top: 10px;
+    margin-left: 10%;
+}
+.loginbox2-ul input:focus{
+    outline: 4px solid #42ab1f;
+    border-radius: 4px;
+    border: none;
+}
+.signin-btn{
+    position: relative;
+    margin: 10px auto 0;
+    width: 40%;
+    height: 40px;
+    background-color: #333;
+    border-radius: 4px;
+    border: 3px solid #fff;
+    transition: all 0.3s;
+}
+.signin-btn:hover{
+    background-color: #222;
+}
+.cutline{
+    margin-top: 20px;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+}
+.loginF-btn{
+    margin: 20px auto 0;
+    width: 80%;
+    height: 40px;
+    background-color: rgb(45, 72, 171);
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+.loginF-btn:hover{
+    background-color: rgb(32, 52, 123);
+}
+.login-box2 a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    line-height: 40px;
+}
+.loginG-btn{
+    position: relative;
+    margin: 20px auto 0;
+    width: 80%;
+    height: 40px;
+    background-color: rgb(224, 68, 41);
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+.loginG-btn:hover{
+    background-color: rgb(173, 53, 32);
+}
+.goto-signin{
+    margin: 0 auto 20px;
+    width: 60%;
+}
+
+/* bottom-textbox */
+.bottom-textbox{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+}
+.bottom-textbox_title{
+    position: absolute;
+    margin-top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    padding: 20px 40px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #333;
+    border-radius: 4px;
+}
+.bottom-textbox_card{
+    margin-top: 45%;
+    height: 50%;
+    background-color: #222;
+    border-radius: 10px;
+    z-index: 20;
+}
+.c-position1{
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+.c-position2{
+    grid-column-start: 6;
+    grid-column-end: 9;
+}
+.c-position3{
+    grid-column-start: 10;
+    grid-column-end: 13;
+}
+.card_img{
+    margin: 30px auto;
+    width: 70%;
+    height: 40%;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+}
+.card_img1{
+    background-image: url(../img/beautiful-guinea-pig-pet-portrait.jpg);
+}
+.card_img2{
+    background-image: url(../img/800x.jpg);
+}
+.card_img3{
+    background-image: url(../img/wp6668799-beetles-wallpapers.jpg);
+}
+.card_text{
+    margin: 0 auto;
+    width: 80%;
+    color: #fff;
+    text-align: center;
+    line-height: 1.2;
+}
+.bgimg{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60%;
+    background-image: url('../img/2206_w018_n002_988b_p15_988.png');
+    background-position: bottom;
+    background-size: cover;
+}

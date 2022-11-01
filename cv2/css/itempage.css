@@ -1,0 +1,326 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    height: 100%;
+    position: relative;
+}
+/* pagebox */
+.pagebox{
+    padding-top: 140px;
+    width: 100%;
+    height: 40px;
+    background-color: #666;
+}
+.pagebox ul{
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+}
+.pagebox ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.pagebox ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 40px;
+}
+.pagebox ul li i{
+    padding-left: 20px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 40px;
+}
+
+/* itemcardbox */
+.itemcardbox{
+    position: relative;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg,#FFEFBA,#FFFFFF);
+}
+.goback{
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+}
+.goback i{
+    color: #333;
+    font-size: 20px;
+    cursor: pointer;
+}
+.goback a{
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 700;
+}
+.bigitemcard{
+    margin: 0 auto;
+    width: 80%;
+    height: 100%;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 2px 2px 4px #666;
+    border: 1px solid #666;
+}
+.item-imgbox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+}
+.bigitemcard img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+}
+.item-infobox{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #dfbe86;
+}
+.item-infobox h6{
+    display: block;
+    margin: 5%;
+    font-size: 32px;
+    font-weight: 800;
+    color: #111;
+}
+.stars2{
+    display: block;
+    margin-left: 5%;
+    margin-bottom: 2%;
+    width: 50%;
+    height: 5%;
+}
+.stars2 i{
+    display: inline-block;
+    margin-bottom: 2%;
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    height: 20px;
+}
+.item-infobox > p{
+    display: inline-block;
+    color: #333;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 5%;
+    padding-left: 20px;
+    border-left: 2px solid #333;
+    margin-bottom: 2%;
+}
+.item-btn{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 2%;
+    padding: 8px 16px;
+    background-color: #333;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 0.3s;
+    border: #fff solid 2px;
+    border-radius: 4px;
+}
+.item-btn1{
+    margin-left: 5%;
+}
+.item-btn:hover{
+    background-color: #111;
+}
+.buttombox{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60%;
+    background-color: #ce9635;
+}
+.buttombox-inner{
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+}
+.buttombox-inner > p{
+    margin-left: 20px;
+    margin-right: 20px;
+    display: inline-block;
+    line-height: 20px;
+    color: #333;
+    font-size: 20px;
+    font-weight: 700;
+}
+.buttombox-inner .buttombox-btn{
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 8px 16px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: #333 solid 2px;
+    border-radius: 4px;
+}
+.buttombox-inner .buttombox-btn:hover{
+    background-color: #111;
+}
+.buy-btn{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 20px;
+    background-color: #a04d27;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: rgb(255, 255, 255) solid 2px;
+    border-radius: 4px;
+}
+.buy-btn:hover{
+    background-color: #854020;
+}
+
+/* lookmore */
+.main{
+    display: flex;
+    height: auto;
+    width: 100%;
+    padding-bottom: 40px;
+    background-color: #333;
+}
+.whitebox{
+    width: 8%;
+    height: 100%;
+
+}
+.itembox{
+    width: 92%;
+    height: 100%;
+
+}
+.itemcard{
+    float: left;
+    position: relative;
+    margin-right: 4%;
+    margin-top: 30px;
+    width: 20%;
+    height: 250px;
+    background-color: rgb(241, 241, 241);
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px #666;
+    transition: all 0.5s;
+}
+.itemcard:hover{
+    transform: scale(1.1);
+}
+
+.itemcard{
+    display: block;
+}
+.itemcard img{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50%;
+}
+.item-textbox{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 50%;
+    background-color: #dfbe86;
+    border-top: #dfbe86 4px solid;
+}
+.item-textbox p{
+    text-decoration: none;
+}
+.item-name{
+    width: 100%;
+    padding: 4% 0;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    color: #333;
+    background-color: #ce9635;
+}
+.info-textbox{
+    width: 100%;
+    height: 60%;
+    background-color: #fff;
+}
+.seller{
+    display: inline-block;
+    margin: 2% 2%;
+    padding: 2% 2%;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    background-color: #333;
+    border: 2px solid #333;
+    border-radius: 4px;
+}
+.stars{
+    display: inline-block;
+}
+.stars i{
+    color: #333;
+    font-size: 12px;
+}
+.number{
+    margin-left: 2%;
+    display: inline-block;
+    color: #333;
+    font-size: 12px;
+    font-weight: 500;
+}
+.price{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 6%;
+    margin-left: 4%;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #a04d27;
+}
+.check-btn{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 6%;
+    margin-right: 6%;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 700;
+    padding: 4%;
+    color: #fff;
+    text-decoration: none;
+    background-color: #a04d27;
+    transition: all 0.5s;
+    border-radius: 8px;
+    border: #fff 2px solid;
+}
+.check-btn:hover{
+    background-color: #7e3d1e;
+}

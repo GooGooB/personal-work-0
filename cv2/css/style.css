@@ -693,6 +693,7 @@
     width: 50%;
     height: 20px;
     padding-left: 12px;
+    border: none;
 }
 .contact textarea{
     display: block;
@@ -704,6 +705,7 @@
     border: none;
     resize: none;
     border-radius: 4px;
+    border: none;
 }
 .send-btn{
     display: inline-block;

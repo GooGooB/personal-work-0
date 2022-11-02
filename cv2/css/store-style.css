@@ -428,6 +428,9 @@ label a:hover{
 .itemcard{
     display: block;
 }
+.itemcard a{
+    display: block;
+}
 .itemcard img{
     position: absolute;
     left: 50%;

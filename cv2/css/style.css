@@ -132,6 +132,17 @@
         top: 320px;
     }
 }
+@media (max-width:414px){
+    .first-title__h2{
+        left: 40%;
+    }
+    .first-title__h3{
+        left: 40%;
+    }
+    .first-title__h4{
+        left: 40%;
+    }
+}
 
 /* second title */
 .second-title{

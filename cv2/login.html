@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>login</title>
     <link rel="stylesheet" href="css/reset.css">
     <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Dancing+Script:wght@400;500;600;700&family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Odor+Mean+Chey&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/plugins/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/login.css">
 </head>
@@ -16,50 +17,96 @@
     <div class="wrapper">
 
         <!-- start topbar -->
-        <div class="topbar">
-            <div class="logobox">
-                <a href="index.html"><img src="img/logo3.png" alt=""></a>
-            </div>
-            <ul class="topbar__box ">
-                <li class="topbar__l1 topbar__li show-popup">
-                    <a href="">資訊館</a>
-                    <ul class="topbar__popup__ul1 topbar__popup__ul">
-                        <li><a href="hamster-page.html">鼠寶</a></li>
-                        <li><a href="">爬蟲</a></li>
-                        <li><a href="beetle-page.html">甲蟲</a></li>
-                        <li><a href="fish-page.html">水族</a></li>
-                    </ul>
-                </li>
-                <li class="topbar__l2 topbar__li show-popup">
-                    <a href="store.html" id="show-popup">商城</a>
-                    <ul class="topbar__popup__ul2 topbar__popup__ul">
-                        <li><a href="store.html">寵物用品</a></li>
-                        <li><a href="store.html">寵物食品</a></li>
-                    </ul>   
-                </li>
-                <li class="topbar__l3 topbar__li show-popup">
-                    <a href="login.html" id="show-popup">登入</a>
-                    <ul class="topbar__popup__ul3 topbar__popup__ul">
-                        <li><a href="login.html">登入</a></li>
-                        <li><a href="login.html">註冊</a></li>
-                    </ul>
-                </li>
-                <li class="topbar__l4 topbar__li show-popup">
-                    <a href="" id="show-popup">關於</a>
-                    <ul class="topbar__popup__ul4 topbar__popup__ul">
-                        <li><a href="#goal">理念</a></li>
-                        <li><a href="#contact">聯絡</a></li>
-                    </ul>
-                </li>
-                
-            </ul>
+        <!-- 主選單 -->
+        <ul class="topbar_ul">
+            <li class="show-popup">
+            <a href="index.html #pet-info" class="topbar_ul-li-a">資訊館</a>
+            <!-- 子選單 -->
+            <ol>
+                <li><a href="hamster-page.html">鼠來堡</a></li>
+                <li><a href="#">角蛙村</a></li>
+                <li><a href="beetle-page.html">甲蟲園</a></li>
+                <li><a href="fish-page.html">魚樂圈</a></li>
+            </ol>
+            </li>
+
+            <li class="li_2 show-popup">
+            <a href="store.html" class="topbar_ul-li-a">商城</a>
+            <ol>
+                <li><a href="store.html">寵物用品</a></li>
+                <li><a href="store.html">寵物食品</a></li>
+            </ol>
+            </li>
+
+            <li class="show-popup">
+            <a href="index.html" class="topbar_ul-li-a">關於</a>
+            <ol>
+                <li><a href="index.html #goal">理念</a></li>
+                <li><a href="index.html #contact">聯絡我們</a></li>
+            </ol>
+            </li>
+
+            <li class="show-popup">
+            <a href="login.html" class="topbar_ul-li-a">會員</a>
+            <ol>
+                <li><a href="login.html">登入</a></li>
+                <li><a href="login.html">註冊</a></li>
+
+            </ol>
+            </li>
+        </ul>
+
+        <div class="logobox">
+            <a href="index.html"><img src="img/logo3.png" alt=""></a>
         </div>
+
         <div class="topbar__popup">
         </div>
-        <!-- end topbar-->
+
+        <!-- phone style -->
+        <div class="phone-topbar_icon" id="phone-topbar_icon"><i class="fa-solid fa-chart-simple"></i></div>
+
+        <ul class="first-box" id="first-box">
+            <li id="phone_libery">資訊館</li>
+            <li id="phone_store">商城</li>
+            <li id="phone_about">關於</li>
+            <li id="phone_login">登入</li>
+            <i class="fa-solid fa-circle-xmark cancel" id="popup_cancel"></i>
+        </ul>
+        <ul class="second-box" id="phone_libery_box">
+            <p class="second-box_title">資訊館</p>
+            <li><a href="hamster-page.html">鼠來堡</a></li>
+            <li><a href="#">角蛙村</a></li>
+            <li><a href="beetle-page.html">甲蟲園</a></li>
+            <li><a href="fish-page.html">魚樂圈</a></li>
+            <i class="fa-solid fa-circle-xmark cancel" id="phone_libery_cancel"></i>
+            <i class="fa-sharp fa-solid fa-circle-right back" id="phone_libery_back"></i>
+        </ul>
+        <ul class="second-box" id="phone_store_box">
+            <p class="second-box_title">商城</p>
+            <li><a href="store.html">寵物用品</a></li>
+            <li><a href="store.html">寵物食品</a></li>
+            <i class="fa-solid fa-circle-xmark cancel" id="phone_store_cancel"></i>
+            <i class="fa-sharp fa-solid fa-circle-right back" id="phone_store_back"></i>
+        </ul>
+        <ul class="second-box" id="phone_about_box">
+            <p class="second-box_title">關於</p>
+            <li><a href="index.html #goal">理念</a></li>
+            <li><a href="index.html #contact">聯絡我們</a></li>
+            <i class="fa-solid fa-circle-xmark cancel" id="phone_about_cancel"></i>
+            <i class="fa-sharp fa-solid fa-circle-right back" id="phone_about_back"></i>
+        </ul>
+        <ul class="second-box" id="phone_login_box">
+            <p class="second-box_title">會員</p>
+            <li><a href="login.html">登入</a></li>
+            <li><a href="login.html">註冊</a></li>
+            <i class="fa-solid fa-circle-xmark cancel" id="phone_login_cancel"></i>
+            <i class="fa-sharp fa-solid fa-circle-right back" id="phone_login_back"></i>
+        </ul>
+
+        <!-- end topbar -->
 
         <!-- start main -->
-
         <!-- bigimg-box1 -->
         <div class="bigimg-box">
             <div class="login-box">
@@ -128,15 +175,15 @@
         
         <div class="bottom-textbox">
             <h3 class="bottom-textbox_title">會員福利</h3>
-            <div class="bottom-textbox_card c-position1">
+            <div class="bottom-textbox_card c-position1 wow animate__animated animate__fadeInLeft">
                 <div class="card_img card_img1"></div>
                 <p class="card_text">觀看其他會員的經驗分享，成長更快速!</p>
             </div>
-            <div class="bottom-textbox_card c-position2">
+            <div class="bottom-textbox_card c-position2 wow animate__animated animate__fadeInLeft animate__delay-1s">
                 <div class="card_img card_img2"></div>
                 <p class="card_text">分享經驗，透過累積正讚數換取商城折扣</p>
             </div>
-            <div class="bottom-textbox_card c-position3">
+            <div class="bottom-textbox_card c-position3 wow animate__animated animate__fadeInLeft animate__delay-2s">
                 <div class="card_img card_img3"></div>
                 <p class="card_text">享受獨一無二寵物商城購物</p>
             </div>
@@ -148,32 +195,9 @@
 
     <!-- javascript -->
     <script src="js2/plugins/jquery/jquery-3.2.1.min.js"></script>
-	<script src="js2/plugins/owl carousel/owl.carousel.min.js"></script>
-	<script>
-		$(document).ready(function(){
-            $('.owl-carousel').owlCarousel({
-                loop:true,
-                nav:true,
-                items: 1,
-                navText: [],
-            })
-        });
-    </script>
-    <script src="js/plugins/jquery/jquery-3.2.1.min.js"></script>
-	<script src="js/plugins/owl carousel/owl.carousel.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        $(document).ready(function(){
-        $(".owl-carousel").owlCarousel({
-                loop:true,
-                nav:true,
-                item:100,
-                navText: [],
-                autoWidth:true,
-                autoplay:true,
-                autoplaySpeed: 20000,
-                // smartSpeed:20000
-            });
-        });
+        
         $(".show-popup").hover(function(){
         $(".topbar__popup").addClass("show1");
         }, 
@@ -185,14 +209,73 @@
             var scroll = $(window).scrollTop();
 
             if (scroll >= 10) {
-                $(".topbar").addClass("topbar--colored");
-                $(".topbar__popup").addClass("topbar__popup--colored");
+                $(".topbar_ul").addClass("topbar--colored");
                 $(".first-title__h2, .first-title__h3, .first-title__h4").addClass("title__hidden");
             } else {
-                $(".topbar").removeClass("topbar--colored");
-                $(".topbar__popup").removeClass("topbar__popup--colored");
+                $(".topbar_ul").removeClass("topbar--colored");
                 $(".first-title__h2, .first-title__h3, .first-title__h4").removeClass("title__hidden");
             }
+        });
+
+        $(".show-popup").hover(function(){
+            $(".topbar__popup").addClass("show1");
+        }, 
+        function(){
+            $(".topbar__popup").removeClass("show1");
+        });
+
+        // phone-topbar-js
+
+        $("#phone-topbar_icon").on("click", function(){
+            $('#first-box').css('right' ,'0px')
+        });
+        $("#popup_cancel").on("click", function(){
+            $('#first-box').css('right' ,'-100%')
+        });
+
+
+        $("#phone_libery").on("click", function(){
+            $('#phone_libery_box').css('right' ,'-5%')
+        });
+        $("#phone_libery_cancel").on("click", function(){
+            $('#phone_libery_box').css('right' ,'-105%'),
+            $('#first-box').css('right' ,'-100%')
+        });
+        $("#phone_libery_back").on("click", function(){
+            $('#phone_libery_box').css('right' ,'-105%')
+        });
+
+        $("#phone_store").on("click", function(){
+            $('#phone_store_box').css('right' ,'-5%')
+        });
+        $("#phone_store_cancel").on("click", function(){
+            $('#phone_store_box').css('right' ,'-105%'),
+            $('#first-box').css('right' ,'-100%')
+        });
+        $("#phone_store_back").on("click", function(){
+            $('#phone_store_box').css('right' ,'-105%')
+        });
+
+        $("#phone_about").on("click", function(){
+            $('#phone_about_box').css('right' ,'-5%')
+        });
+        $("#phone_about_cancel").on("click", function(){
+            $('#phone_about_box').css('right' ,'-105%'),
+            $('#first-box').css('right' ,'-100%')
+        });
+        $("#phone_about_back").on("click", function(){
+            $('#phone_about_box').css('right' ,'-105%')
+        });
+
+        $("#phone_login").on("click", function(){
+            $('#phone_login_box').css('right' ,'-5%')
+        });
+        $("#phone_login_cancel").on("click", function(){
+            $('#phone_login_box').css('right' ,'-105%'),
+            $('#first-box').css('right' ,'-100%')
+        });
+        $("#phone_login_back").on("click", function(){
+            $('#phone_login_box').css('right' ,'-105%')
         });
 
         let click1 = document.getElementById('go-signin');

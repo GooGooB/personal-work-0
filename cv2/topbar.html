@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Dancing+Script:wght@400;500;600;700&family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Odor+Mean+Chey&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="css/topbar.css">
+</head>
+<body>
+    <div class="wrapper">
+
+        <!-- start topbar -->
+        <!-- 主選單 -->
+        <ul class="topbar_ul">
+            <li class="show-popup">
+            <a href="#">資訊館</a>
+            <!-- 子選單 -->
+            <ol>
+                <li><a href="#">鼠寶</a></li>
+                <li><a href="#">兩棲</a></li>
+                <li><a href="#">甲蟲</a></li>
+                <li><a href="#">水族</a></li>
+            </ol>
+            </li>
+
+            <li class="li_2 show-popup">
+            <a href="#">商城</a>
+            <ol>
+                <li><a href="#">寵物用品</a></li>
+                <li><a href="#">寵物食品</a></li>
+            </ol>
+            </li>
+
+            <li class="show-popup">
+            <a href="#">關於</a>
+            <ol>
+                <li><a href="#">理念</a></li>
+                <li><a href="#">聯絡我們</a></li>
+            </ol>
+            </li>
+
+            <li class="show-popup">
+            <a href="#">會員</a>
+            <ol>
+                <li><a href="#">登入</a></li>
+                <li><a href="#">註冊</a></li>
+
+            </ol>
+            </li>
+        </ul>
+
+        <div class="logobox">
+            <img src="img/logo3.png" alt="">
+        </div>
+
+        <div class="topbar__popup">
+        </div>
+
+        <!-- phone style -->
+        <div class="phone-topbar_icon" id="phone-topbar_icon"><i class="fa-solid fa-chart-simple"></i></div>
+
+        <ul class="first-box" id="first-box">
+            <li id="phone_libery">資訊館</li>
+            <li id="phone_store">商城</li>
+            <li id="phone_about">關於</li>
+            <li id="phone_login">登入</li>
+            <i class="fa-solid fa-circle-xmark cancel" id="popup_cancel"></i>
+        </ul>
+        <ul class="second-box" id="phone_libery_box">
+            <p class="second-box_title">資訊館</p>
+            <li><a href="">鼠來堡</a></li>
+            <li><a href="">角蛙村</a></li>
+            <li><a href="">甲蟲園</a></li>
+            <li><a href="">魚樂圈</a></li>
+            <i class="fa-solid fa-circle-xmark cancel" id="phone_libery_cancel"></i>
+            <i class="fa-sharp fa-solid fa-circle-right back" id="phone_libery_back"></i>
+        </ul>
+        <ul class="second-box" id="phone_store_box">
+            <p class="second-box_title">商城</p>
+            <li><a href="">寵物用品</a></li>
+            <li><a href="">寵物食品</a></li>
+            <i class="fa-solid fa-circle-xmark cancel" id="phone_store_cancel"></i>
+            <i class="fa-sharp fa-solid fa-circle-right back" id="phone_store_back"></i>
+        </ul>
+        <ul class="second-box" id="phone_about_box">
+            <p class="second-box_title">關於</p>
+            <li><a href="">理念</a></li>
+            <li><a href="">聯絡我們</a></li>
+            <i class="fa-solid fa-circle-xmark cancel" id="phone_about_cancel"></i>
+            <i class="fa-sharp fa-solid fa-circle-right back" id="phone_about_back"></i>
+        </ul>
+        <ul class="second-box" id="phone_login_box">
+            <p class="second-box_title">會員</p>
+            <li><a href="">登入</a></li>
+            <li><a href="">註冊</a></li>
+            <i class="fa-solid fa-circle-xmark cancel" id="phone_login_cancel"></i>
+            <i class="fa-sharp fa-solid fa-circle-right back" id="phone_login_back"></i>
+        </ul>
+
+        <!-- end topbar -->
+
+        
+
+        
+
+        <div class="bg"></div>
+    </div>
+    <script src="js/plugins/jquery/jquery-3.2.1.min.js"></script>
+    <script>
+        $(".show-popup").hover(function(){
+            $(".topbar__popup").addClass("show1");
+        }, 
+        function(){
+            $(".topbar__popup").removeClass("show1");
+        });
+
+        // phone-topbar-js
+
+        $("#phone-topbar_icon").on("click", function(){
+            $('#first-box').css('right' ,'0px')
+        });
+        $("#popup_cancel").on("click", function(){
+            $('#first-box').css('right' ,'-100%')
+        });
+
+
+        $("#phone_libery").on("click", function(){
+            $('#phone_libery_box').css('right' ,'-5%')
+        });
+        $("#phone_libery_cancel").on("click", function(){
+            $('#phone_libery_box').css('right' ,'-105%'),
+            $('#first-box').css('right' ,'-100%')
+        });
+        $("#phone_libery_back").on("click", function(){
+            $('#phone_libery_box').css('right' ,'-105%')
+        });
+
+        $("#phone_store").on("click", function(){
+            $('#phone_store_box').css('right' ,'-5%')
+        });
+        $("#phone_store_cancel").on("click", function(){
+            $('#phone_store_box').css('right' ,'-105%'),
+            $('#first-box').css('right' ,'-100%')
+        });
+        $("#phone_store_back").on("click", function(){
+            $('#phone_store_box').css('right' ,'-105%')
+        });
+
+        $("#phone_about").on("click", function(){
+            $('#phone_about_box').css('right' ,'-5%')
+        });
+        $("#phone_about_cancel").on("click", function(){
+            $('#phone_about_box').css('right' ,'-105%'),
+            $('#first-box').css('right' ,'-100%')
+        });
+        $("#phone_about_back").on("click", function(){
+            $('#phone_about_box').css('right' ,'-105%')
+        });
+
+        $("#phone_login").on("click", function(){
+            $('#phone_login_box').css('right' ,'-5%')
+        });
+        $("#phone_login_cancel").on("click", function(){
+            $('#phone_login_box').css('right' ,'-105%'),
+            $('#first-box').css('right' ,'-100%')
+        });
+        $("#phone_login_back").on("click", function(){
+            $('#phone_login_box').css('right' ,'-105%')
+        });
+
+    </script>
+</body>
+</html>
